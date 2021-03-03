@@ -1,0 +1,161 @@
+.comments {
+  position: relative;
+}
+
+.comments__button {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 2px;
+}
+
+.comments__list {
+  @include list-reset;
+}
+
+.comments__item {
+  position: relative;
+
+  padding-bottom: 21px;
+
+  &:nth-child(n + 2) {
+    margin-top: 19px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.comments__user-name {
+  font-family: $opensans;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #48494d;
+}
+
+.comments__title {
+  font-family: $opensans;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.comments__merit,
+.comments__flaw,
+.comments__recall {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments__merit {
+  position: relative;
+
+  margin-top: 13px;
+  padding-left: 17px;
+
+  &::before {
+    position: absolute;
+    content: "+";
+    top: 0;
+    left: 0;
+
+    font-family: $opensans;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #d12136;
+  }
+}
+
+.comments__flaw {
+  position: relative;
+
+  margin-top: 15px;
+  padding-left: 17px;
+
+  &::before {
+    position: absolute;
+    content: "-";
+    top: 0;
+    left: 0;
+
+    font-family: $opensans;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #d12136;
+  }
+}
+
+.comments__recall {
+  margin-top: 14px;
+
+  &--pixel-perfect {
+    margin-top: 24px;
+  }
+}
+
+.comments__text {
+  margin-top: 3px;
+
+  font-family: $opensans;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+
+  &--red {
+    margin-left: 17px;
+
+    color: #d12136;
+  }
+}
+
+.comments__stars {
+  margin-top: 22px;
+}
+
+.comments__time {
+  margin-top: 25px;
+}
+
+.comments__response-time {
+  font-family: $opensans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+
+  opacity: 0.4;
+}
+
+.comments__link {
+  margin-left: 21px;
+
+  font-family: $opensans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #d12136;
+
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba(209, 33, 54, 0.8);
+  }
+}
+
+.comments--not-active {
+  display: none;
+}

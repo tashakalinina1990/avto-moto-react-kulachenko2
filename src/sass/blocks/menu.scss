@@ -1,0 +1,24 @@
+.menu__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu__item {
+  margin-left: 68px;
+}
+
+.menu__link {
+  font-family: $opensans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #48494d;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba(72, 73, 77, 0.8);
+  }
+}

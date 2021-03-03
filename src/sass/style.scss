@@ -1,0 +1,19 @@
+/*general*/
+@import "general/normalize.scss";
+@import "general/fonts.scss";
+@import "general/variables.scss";
+@import "general/mixins.scss";
+@import "general/common.scss";
+/*blocks*/
+@import "blocks/header.scss";
+@import "blocks/menu.scss";
+@import "blocks/goods.scss";
+@import "blocks/slider.scss";
+@import "blocks/button.scss";
+@import "blocks/about.scss";
+@import "blocks/specification.scss";
+@import "blocks/comments.scss";
+@import "blocks/contact.scss";
+@import "blocks/footer.scss";
+@import "blocks/modal.scss";
+@import "blocks/form.scss";

@@ -1,0 +1,52 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 196px;
+  height: 52px;
+
+  background-color: #d12136;
+
+  font-family: $opensans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+
+  &:hover,
+  &:focus {
+    background-color: #bd0c21;
+  }
+
+  &--white-long {
+    width: 222px;
+
+    color: #d12136;
+
+    border: 1px solid #d12136;
+
+    background-color: transparent;
+  }
+
+  &--white-short {
+    width: 189px;
+
+    color: #d12136;
+
+    border: 1px solid #d12136;
+
+    background-color: transparent;
+  }
+}
+
+.button--white-long:hover,
+.button--white-long:focus,
+.button--white-short:hover,
+.button--white-short:focus {
+  background-color: #d12136;
+  color: #ffffff;
+}
